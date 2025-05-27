@@ -1,0 +1,40 @@
+# Ansible Installation & Configurations
+
+## For Debian/Ubuntu : let's update the system first by using below commands:
+
+  sudo apt update
+  sudo apt upgrade -y
+
+  sudo apt install software-properties-common -y
+  sudo add-apt-repository --yes --update ppa:ansible/ansible
+  sudo apt install ansible -y
+
+
+## On RHEL/CentOS : let's update the system first by using below commands:
+
+  sudo yum update -y
+  
+  Install Ansible
+  On RHEL/CentOS, you can install Ansible by enabling the EPEL repository:
+
+  sudo yum install epel-release -y
+  sudo yum install ansible -y
+
+
+## Now let's Verify Installation
+
+  ansible --version
+
+
+## You should see output similar to
+
+  ansible [core 2.14.3]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/user/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3.8/site-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 3.8.10 (default, May  3 2021, 08:55:58) [GCC 10.2.1 20210110]
+
+
+
+
