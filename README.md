@@ -9,20 +9,15 @@ The source code is managed using Git and hosted on GitHub.
 Branches such as main and development are used to organize the codebase and track changes effectively.
 
 2️⃣ CI/CD with Jenkins
-Jenkins acts as the Continuous Integration server.
-
-On each new code commit, Jenkins automatically pulls the latest changes from GitHub.
-
-The application is built using Maven, and automated tests are executed.
-
-If any tests fail, the build is marked as failed and the team is alerted.
+    Jenkins acts as the Continuous Integration server.
+    On each new code commit, Jenkins automatically pulls the latest changes from GitHub.
+    The application is built using Maven, and automated tests are executed.
+    If any tests fail, the build is marked as failed and the team is alerted.
 
 3️⃣ Code Quality Analysis with SonarQube
-SonarQube is integrated into the Jenkins pipeline.
-
-It analyzes the code for bugs, vulnerabilities, and code smells.
-
-Reports are generated to ensure code quality before deployment.
+    SonarQube is integrated into the Jenkins pipeline.
+    It analyzes the code for bugs, vulnerabilities, and code smells.
+    Reports are generated to ensure code quality before deployment.
 
 4️⃣ Containerization with Docker
 The Java application is containerized using Docker.
