@@ -1,22 +1,19 @@
-**🛠️ Introduction to Ansible**
-Ansible is an open-source, agentless automation tool for:
+# 🛠️ Introduction to Ansible
 
-Configuration management
+Ansible is an open-source, agentless automation tool used for:
 
-Application deployment
+1. **Configuration management**
+2. **Application deployment**
+3. **Orchestration**
 
-Orchestration
+It uses **SSH** for communication and follows a **declarative approach**—you define the desired state, not the steps to get there.
 
-It uses SSH for communication and follows a declarative approach—you define the desired state, not the steps to get there.
+---
 
-**🔑 Key Concepts**
+## 🔑 Key Concepts
 
-Inventory: Lists target hosts (static or dynamic).
-
-Playbooks: YAML files defining tasks and configurations.
-
-Tasks: Individual actions executed on hosts.
-
-Modules: Built-in tools for system operations (e.g., file, package, service).
-
-Roles: Structured, reusable playbook components (tasks, vars, handlers).
+- **Inventory**: Lists target hosts (static or dynamic).
+- **Playbooks**: YAML files defining tasks and configurations.
+- **Tasks**: Individual actions executed on hosts.
+- **Modules**: Built-in tools for system operations (e.g., file, package, service).
+- **Roles**: Structured, reusable playbook components (tasks, vars, handlers).
