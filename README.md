@@ -41,3 +41,48 @@ You declare the desired state of a local or remote system in your playbook, and 
 - Ensures consistent system state.
 - Re-running playbooks doesn’t cause unintended changes.
 
+
+---
+
+## 🔑 Key Concepts
+
+- **Inventory**: Lists target hosts (static or dynamic).
+- **Playbooks**: YAML files defining tasks and configurations.
+- **Tasks**: Individual actions executed on hosts.
+- **Modules**: Built-in tools for system operations (e.g., file, package, service).
+- **Roles**: Structured, reusable playbook components (tasks, vars, handlers).
+
+---
+
+## 🛠️ Installation of Ansible
+
+### Install via APT
+```bash
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt update
+sudo apt install ansible
+
+## Configure Inventory
+
+sudo nano /etc/ansible/hosts
+ansible-inventory --list -y
+
+[servers]
+server1 ansible_host=<Public IP>
+server2 ansible_host=<Public IP>
+server3 ansible_host=<Public IP>
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/<file>
+
+
+## ⚡ Ad-Hoc Commands vs Modules
+
+**Ad-Hoc Commands**
+ansible all -a "df -h" -u ubuntu
+ansible servers -a "uptime" -u ubuntu
+
+Modules
+ansible all -m ping -u ubuntu
