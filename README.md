@@ -80,7 +80,7 @@ ansible_ssh_private_key_file=/<file>
 
 ## ⚡ Ad-Hoc Commands vs Modules
 
-**Ad-Hoc Commands**
+Ad-Hoc Commands
 ansible all -a "df -h" -u ubuntu
 ansible servers -a "uptime" -u ubuntu
 
