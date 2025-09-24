@@ -62,12 +62,10 @@ You declare the desired state of a local or remote system in your playbook, and 
 
 ## For Debian/Ubuntu : let's update the system first by using below commands:
 
-  sudo apt update
-  sudo apt upgrade -y
-
-  sudo apt install software-properties-common -y
-  sudo add-apt-repository --yes --update ppa:ansible/ansible
-  sudo apt install ansible -y
+$ sudo apt update
+$ sudo apt install software-properties-common
+$ sudo add-apt-repository --yes --update ppa:ansible/ansible
+$ sudo apt install ansible
 
 
 ## On RHEL/CentOS : let's update the system first by using below commands:
